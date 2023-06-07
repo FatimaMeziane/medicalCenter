@@ -29,8 +29,9 @@ ob_start(); ?>
                             <div class="col-7">
                                 <h4 class="card-title">Médecin généraliste</h4>
                                 <p class="card-text">
-                                    Le docteur Grey vous reçoit au Centre médical de l'étang le lundi, mardi matin et
-                                    jeudi toute la journée.</p>
+                                    Le docteur Grey vous reçoit au Centre médical de l'étang le lundi,
+                                    mardi, mercredi, jeudi, vendredi toute la journée.</p>
+                                    <button type="button" class="btn btn-primary">Prendre rendez-vous</button>
                             </div>
 
                         </div>
@@ -50,6 +51,7 @@ ob_start(); ?>
                                 <p class="card-text">
                                     Le docteur House vous reçoit au Centre médical de l'étang le lundi, mardi, mercredi,
                                     jeudi, vendredi toute la journée.</p>
+                                    <button type="button" class="btn btn-primary">Prendre rendez-vous</button>
                             </div>
 
                         </div>
@@ -59,7 +61,7 @@ ob_start(); ?>
 
             <div class="col-sm-12 col-md-12 col-lg-4  ">
                 <div class="card text-dark border-primary mb-3 " style="max-width: 30rem; height: 20rem;">
-                    <div class="card-header">Dr beau gosse</div>
+                    <div class="card-header">Dr Mark Sloan</div>
                     <div class="card-body">
                         <div class="row">
                             
@@ -70,6 +72,7 @@ ob_start(); ?>
                                 <h4 class="card-title">Médecin généraliste</h4>
                                 <p class="card-text">Le docteur Sloan vous reçoit au Centre médical de l'étang le lundi,
                                     mardi, mercredi, jeudi, vendredi toute la journée.</p>
+                                    <button type="button" class="btn btn-primary">Prendre rendez-vous</button>
                             </div>
 
                         </div>
