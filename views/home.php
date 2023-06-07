@@ -59,7 +59,7 @@ ob_start(); ?>
 
             <div class="col-sm-12 col-md-12 col-lg-4  ">
                 <div class="card text-dark border-primary mb-3 " style="max-width: 30rem; height: 20rem;">
-                    <div class="card-header">Dr Mark Sloan</div>
+                    <div class="card-header">Dr beau gosse</div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-5">
