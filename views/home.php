@@ -2,9 +2,12 @@
 $title = "page d'accueil";
 $description = "";
 ob_start(); ?>
-<div class="container">
-    <main class="container my-5">
-        <div class="row my-5">
+
+<header>
+    <img src="./assets/img/medicalCenter.png" class="card-img-top" alt="...">
+
+
+ <!-- <div class="row my-5">
             <div class="col-12">
                 <div class="card mb-3">
                     <img src="./assets/img/medicalCenter.png" class="card-img-top" alt="...">
@@ -16,7 +19,12 @@ ob_start(); ?>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+</header>
+
+<div class="container">
+    <main class="container my-5">
+        
         <div class="row my-5">
             <div class="col-sm-12 col-md-12 col-lg-4 ">
                 <div class="card text-dark border-primary mb-3 " style="max-width: 30rem; height: 20rem;">
