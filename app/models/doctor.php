@@ -1,34 +1,81 @@
 <?php
 namespace App\models;
 class Doctor{
-    private $nom;
-    private $prenom;
+    private $id;
+    private $id_user;
+    private $adeli;
+    private $speciality;
     
 
-    function  __construct($nom, $prenom)
-    
-    {
-        $this->nom = $nom;
-        $this->prenom = $prenom;    
-    }
     /**
-     * Get the value of nom
-     */ 
-    public function getNom()
-    {
-        return $this->nom;
-    }
-
-    /**
-     * Set the value of nom
+     * Set the value of id
      *
      * @return  self
      */ 
-    public function setNom($nom)
+    public function setId($id)
     {
-        $this->nom = $nom;
+        $this->id = $id;
 
         return $this;
     }
-    
+
+    /**
+     * Get the value of id_user
+     */ 
+    public function getId_user()
+    {
+        return $this->id_user;
+    }
+
+    /**
+     * Set the value of id_user
+     *
+     * @return  self
+     */ 
+    public function setId_user($id_user)
+    {
+        $this->id_user = $id_user;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of adeli
+     */ 
+    public function getAdeli()
+    {
+        return $this->adeli;
+    }
+
+    /**
+     * Set the value of adeli
+     *
+     * @return  self
+     */ 
+    public function setAdeli($adeli)
+    {
+        $this->adeli = $adeli;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of speciality
+     */ 
+    public function getSpeciality()
+    {
+        return $this->speciality;
+    }
+
+    /**
+     * Set the value of speciality
+     *
+     * @return  self
+     */ 
+    public function setSpeciality($speciality)
+    {
+        $this->speciality = $speciality;
+
+        return $this;
+    }
 }
