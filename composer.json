@@ -1,0 +1,9 @@
+{
+    "name": "eval/centre-medical",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\" : "app/"
+        }
+    }
+}
