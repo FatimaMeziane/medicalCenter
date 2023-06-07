@@ -8,6 +8,10 @@ class MedicalFiles{
     private $created_at;
     private $update_at;
 
+    function __construct()
+    {
+        
+    }
     /**
      * Get the value of id
      */ 
