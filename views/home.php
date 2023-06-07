@@ -62,6 +62,7 @@ ob_start(); ?>
                     <div class="card-header">Dr beau gosse</div>
                     <div class="card-body">
                         <div class="row">
+                            
                             <div class="col-5">
                                 <img src="./assets/img/Sloan.png" class="border border-primary img-fluid" alt="">
                             </div>
