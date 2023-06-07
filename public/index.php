@@ -1,7 +1,7 @@
 <?php
 require_once dirname(__FILE__, 2) . '/vendor/autoload.php';
 require_once dirname(__FILE__, 2) . '/app/controller/homeController.php';
-require_once dirname(__FILE__, 2) . '/app/controller/enregistrementController.php';
+require_once dirname(__FILE__, 2) . '/app/controller/securityController.php';
 
 use app\models\Doctor;
 
