@@ -1,22 +1,48 @@
 <?php
 namespace App\models;
+use PDO;
 class Users{
     private $id;
     private $role;
     private $civility;
-    private $firstName;
-    private $lastName;
+    private $firstname;
+    private $lastname;
     private $email;
     private $password;
     private $address;
     private $postCode;
     private $city;
+    private $created_at;
+    private $updated_at;
     
     function __construct()
     {
         
     }
 
+    function database()
+    {
+        return new PDO('mysql:host=localhost;dbname=medical_center', 'root', '');
+    }
+    public function create()
+    {
+        $sqlState = $this->database()->prepare("INSERT INTO users VALUES(null,?,?,?,?,?,?,?,?,?,?,?)");
+       return $sqlState->execute([
+           
+            $this->role,
+            $this->civility,
+            $this->firstname,
+            $this->lastname,
+            $this->email,
+            $this->password,
+            $this->address,
+            $this->postCode,
+            $this->city,
+            $this->created_at,
+            $this->updated_at
+        ]);
+        
+    }
     /**
      * Get the value of role
      */ 
@@ -62,7 +88,7 @@ class Users{
      */ 
     public function getFirstName()
     {
-        return $this->firstName;
+        return $this->firstname;
     }
 
     /**
@@ -72,7 +98,7 @@ class Users{
      */ 
     public function setFirstName($firstName)
     {
-        $this->firstName = $firstName;
+        $this->firstname = $firstName;
 
         return $this;
     }
@@ -82,7 +108,7 @@ class Users{
      */ 
     public function getLastName()
     {
-        return $this->lastName;
+        return $this->lastname;
     }
 
     /**
@@ -90,9 +116,9 @@ class Users{
      *
      * @return  self
      */ 
-    public function setLastName($lastName)
+    public function setLastname($lastName)
     {
-        $this->lastName = $lastName;
+        $this->lastname = $lastName;
 
         return $this;
     }
@@ -205,6 +231,46 @@ class Users{
     public function setId($id)
     {
         $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of created_at
+     */ 
+    public function getCreated_at()
+    {
+        return $this->created_at;
+    }
+
+    /**
+     * Set the value of created_at
+     *
+     * @return  self
+     */ 
+    public function setCreated_at($created_at)
+    {
+        $this->created_at = $created_at;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of updated_at
+     */ 
+    public function getUpdated_at()
+    {
+        return $this->updated_at;
+    }
+
+    /**
+     * Set the value of updated_at
+     *
+     * @return  self
+     */ 
+    public function setUpdated_at($updated_at)
+    {
+        $this->updated_at = $updated_at;
 
         return $this;
     }
