@@ -1,7 +1,7 @@
 <?php
-namespace App\models;
+namespace app\models;
 use PDO;
-class Users{
+class Users extends connexionDB{
     private $id;
     private $role;
     private $civility;
@@ -19,14 +19,14 @@ class Users{
     {
         
     }
+ 
 
-    function database()
-    {
-        return new PDO('mysql:host=localhost;dbname=medical_center', 'root', '');
-    }
+
     public function create()
     {
-        $sqlState = $this->database()->prepare("INSERT INTO users VALUES(null,?,?,?,?,?,?,?,?,?,?,?)");
+        // $sqlState = $this->database()->prepare("INSERT INTO users VALUES(null,?,?,?,?,?,?,?,?,?,?,?)");
+      
+        $sqlState = static::database()->prepare("INSERT INTO users VALUES(null,?,?,?,?,?,?,?,?,?,?,?)");
        return $sqlState->execute([
            
             $this->role,

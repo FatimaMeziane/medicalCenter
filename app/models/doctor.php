@@ -1,6 +1,8 @@
 <?php
-namespace App\models;
-class Doctor{
+namespace app\models;
+use PDO;
+
+class Doctor extends connexionDB{
     private $id;
     private $id_user;
     private $adeli;
